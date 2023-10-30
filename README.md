@@ -1,10 +1,10 @@
 # Python008
 Welcome to Python 008 class
  we will learn   about python
-|  class num |   title|  link |  
-|  1         |intro   |  |
-|   |   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |   |
+|  class num |   title                |  link |  
+|  1         |intro                   |       |
+|  2         |data type               |       |  
+|  3         |   if for wihtuser input|       |
 |   |   |   |   
 |   |   |   |   |   |   |   |   |   |   |
 |   |   |   |   |   |   |   |   |   |   |
