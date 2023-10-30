@@ -5,7 +5,7 @@ Welcome to Python 008 class
 |  1         |intro                   |       |
 |  2         |data type               |       |  
 |  3         |   if for wihtuser input|       |
-|   |   |   |   
+| 4          |  function              |       |   
 |   |   |   |   |   |   |   |   |   |   |
 |   |   |   |   |   |   |   |   |   |   |
 |   |   |   |   |   |   |   |   |   |   |
