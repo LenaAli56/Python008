@@ -10,6 +10,20 @@ while True:
     choise=input("Enter your choise : ")
     if choise =="1":
         name=input("Enter the person name : ")
+        # while True:
+        #     age=input("Enter the person age : ")
+        #     if age.isdigit()==False:
+        #         print("Please enter valid age : ")
+        #         continue
+        #     else :
+        #         break
+        while True:
+            try:
+                age=input("Enter the person age : ")
+                break
+            except:
+                print("Please enter valid age : ")
+                
         job=input("Enter the person job : ")
         person['name']=name
         person['age']=age
