@@ -10,11 +10,6 @@ while True:
     choise=input("Enter your choise : ")
     if choise =="1":
         name=input("Enter the person name : ")
-        age=input("Enter the person age : ")
-        if age == (type.str):
-            for i in age:
-                print("Enter the age person agena")
-        age=int(age)
         job=input("Enter the person job : ")
         person['name']=name
         person['age']=age
