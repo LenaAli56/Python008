@@ -1,3 +1,4 @@
+#class2 
 page={'title1':'Kingdom of Jordan'}
 page1={'title2':'Egypation Republic'}
 page2={ 'welcom':'Welcome to Kingdom of Jordan page',
