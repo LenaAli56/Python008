@@ -50,15 +50,14 @@ while True:
             else :
               print('The password is shorter than 8 char')
 
-
-        account={
+            account={
             'name':name,
             'age':age,
             'job':job,
             'password':password
                }
-        allaccount.append(account)
-        print("The account has been created successfully")
+            allaccount.append(account)
+            print("The account has been created successfully")
 
     elif choice=='2':
         print('Please enter your name and password')
@@ -75,8 +74,6 @@ while True:
                 print('5- delete your account ')
                 print('6-logout ')
                 choiceBook=input('Enter your choice: ')
-                if choic
-                break
             else:
                 print('The name or password is wrong')
             
