@@ -8,7 +8,7 @@
 
 
 import numbers
-choose1=input("Enter your choose1 : ")
+choose1=input("Enter your choose : ")
 choose1=int(choose1)
 print(type(choose1))
 if choose1 != numbers:

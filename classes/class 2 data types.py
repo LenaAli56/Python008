@@ -14,7 +14,7 @@ num2=12.2
 print(num2)
 # 3- Boolen:True,Folse
 print(1==1)
-# 4-List : {1,2,3,4,5}/(changable)
+# 4-List : [1,2,3,4,5]/(changable)
 #    index 0 1 2 3 4
  
 lis=[1,2,3,4,5,6,7,8,9,10,0]

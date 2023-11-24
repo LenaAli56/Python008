@@ -25,8 +25,9 @@ def function123 ():
 print(function123())
 
 num1=float(input("enter the fist number "))
-num2=float(input("enter the scound number"))
+num2=float(input("enter the scound number "))
 def sum(x,y):
+    print("X + Y = ",end= ' ')
     return(x+y)
 print(sum(num1,num2))
 
