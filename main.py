@@ -137,8 +137,30 @@
 #     i+=1
 #     if i == 10:
 #         break
+#*******************************************************************************************************
+# list1=[{'new2':'new'},{'new3':'new'},{'new4':'new'}]
+# list3=['aa','ff','a','cc','a','dd','a']
+# dic1={'dic1':'dic1'}
+# dic2={'dic2':'dic2'}
+# list1.insert(0,dic1)
+# print(list1)
+# list1.insert(2,dic2)
+# print(list1)
+# list3.sort()
+# print(list3)
+# list3.reverse()
+# print(list3)
+# print('count a :',list3.count('a'))
+# print('len in the liste is ',list3.__len__())
+# # list3.clear()
+# # print(list3)
+# list3.pop(2)
+# print(list3)
 
+#******************************************************************************************************
 
+## person as dic : name,age,job,skills
+## let the user take a choice to add new person or see all the person
 allperson=[]
 person={}
 print("Welcom to our app")
@@ -150,18 +172,31 @@ while True:
     choice=input("Enter your choice ")
     if choice =="1":
         name=input("Enter the user name : ")
-        age=input("Enter the user age : ")
-        # while True:
-        #     age=input("Enter the user age : ")
-        #     if age.isdigit()==False:
-        #         print("Please enter a valid ade")
-        #         continue
-        #     else:
-        #         break
-
-
+        if allperson !=[]:
+            isExited=True
+            while isExited: 
+                for i in allperson:
+                    # i =1 person as dic
+                    # #input i=c
+                    # ['a','b',c'] 
+                    if name==i['name']:
+                        print("This name is already exist")
+                        name=input("Enter the user name : ")
+                        isExited=True
+                        break
+                    else:
+                        isExited=False
+        while True:
+            try:
+                age=int(input("Enter the user age : "))
+                break
+            except:
+                print("Please enter a valid age")
         job=input("Enter the user job : ")
         password=input("Enter the user password : ")
+
+        # make the name unique
+
         person={
             'name':name,
             'age':age,

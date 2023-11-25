@@ -8,10 +8,10 @@ Welcome to Python 008 class
 |  4         |function                |       |   
 |  5         |while loop              |       |   
 |  6         |lonig system            |       |  
-|  7         |   |   |    
-|  8         |   |   |  
-|   |   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |   |
+|  7         |list method             |       |    
+|  8         |dic method              |       |  
+|  9         |reg validator           |       |
+|  10        |   |   |   
 |   |   |   |   |   |   |   |   |   |   |
 |---|---|---|---|---|---|---|---|---|---|
 |   |   |   |   |   |   |   |   |   |   |

@@ -2,17 +2,17 @@ allperson=[]
 person={}
 print("Welcom to our app ")
 while True:
-    print('__'*30)
-    print("1- Create accuont ")
+    print("__"*30)
+    print("1- Create account ")
     print("2- Login ")
     print("3- Exit ")
     choice=input("Enter your choice ")
-    if choice == "1":
+    if choice =='1':
         name=input("Enter the user name : ")
-        while True :
+        while True:
             age=input("Enter the user age : ")
-            if age.isdigit()==False:
-                print("Please enter a volid age")
+            if age.isdecimal()==False:
+                print("Please enter a valid age")
                 continue
             else:
                 break
@@ -25,31 +25,24 @@ while True:
             'password':password
         }
         allperson.append(person)
-        print("you aaded an account seccessfully ")
+        print("You added an account seccessfully")
 
 
-    elif choice == "2":
-        print("__"*30)
-        print("Please enter your name and pasword : ")
+    elif choice == '2':
+        print("Please enter your name and password : ")
         name=input("Enter the user name : ")
         password=input("Enter the user password : ")
-        for i in allperson:
+        for i in allperson :
             if i['name']==name and i['password']==password:
-                print("Welcom ", name)
+                print("Welcom ",name)
                 break
             else:
-                print("The name or password is wrong")
-                
+                print("Your name or password is wrong ")
 
 
-    elif choice =="3":
-        print("Thank you for usind our app ")
+    elif choice =='3':
         break
-
-
-    elif choice =="4":
+    elif choice =='4':
         print(allperson)
-
-        
-    elif choice =="5":
-       print("your choice is wrong")
+    else:
+        print("Your choice is wrong")
