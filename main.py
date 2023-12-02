@@ -161,83 +161,129 @@
 
 ## person as dic : name,age,job,skills
 ## let the user take a choice to add new person or see all the person
-allperson=[]
-person={}
-print("Welcom to our app")
-while True:
-    print("__"*20)
-    print("1- Create account ")
-    print("2- login ")
-    print("3- Exit ")
-    choice=input("Enter your choice ")
-    if choice =="1":
-        name=input("Enter the user name : ")
-        if allperson !=[]:
-            isExited=True
-            while isExited: 
-                for i in allperson:
-                    # i =1 person as dic
-                    # #input i=c
-                    # ['a','b',c'] 
-                    if name==i['name']:
-                        print("This name is already exist")
-                        name=input("Enter the user name : ")
-                        isExited=True
-                        break
-                    else:
-                        isExited=False
-        while True:
-            try:
-                age=int(input("Enter the user age : "))
-                break
-            except:
-                print("Please enter a valid age")
-        job=input("Enter the user job : ")
-        password=input("Enter the user password : ")
+# allperson=[]
+# person={}
+# print("Welcom to our app")
+# while True:
+#     print("__"*20)
+#     print("1- Create account ")
+#     print("2- login ")
+#     print("3- Exit ")
+#     choice=input("Enter your choice ")
+#     if choice =="1":
+#         name=input("Enter the user name : ")
+#         if allperson !=[]:
+#             isExited=True
+#             while isExited: 
+#                 for i in allperson:
+#                     # i =1 person as dic
+#                     # #input i=c
+#                     # ['a','b',c'] 
+#                     if name==i['name']:
+#                         print("This name is already exist")
+#                         name=input("Enter the user name : ")
+#                         isExited=True
+#                         break
+#                     else:
+#                         isExited=False
+#         while True:
+#             try:
+#                 age=int(input("Enter the user age : "))
+#                 break
+#             except:
+#                 print("Please enter a valid age")
+#         job=input("Enter the user job : ")
+#         password=input("Enter the user password : ")
 
-        # make the name unique
+#         # make the name unique
 
-        person={
-            'name':name,
-            'age':age,
-            'job':job,
-            'password':password
-        }
-        allperson.append(person)
-        print("You added person successfully")
-
-
-
-    elif choice =="2":
-        # conter=1
-        # print("__"*20)
-        # print("all person : ")
-        # for i in allperson:
-        #     print("person",conter)
-        #     for key in i :
-        #         print("  ",key ,' : ',i[key])
-        #     conter+=1
-
-        print("__"*30)
-        print("Please enter your name and password : ")
-        name=input("Enter the user name : ")
-        password=input("Enter the user password : ")
-        ## if to check if the name and password is correct > are in the allperson list and dic(person)
-        for i in allperson:
-            if i['name']==name and i['password']==password:
-                print("Welcom ",name)
-                break
-            else:
-                print("the name or password is wrong")
+#         person={
+#             'name':name,
+#             'age':age,
+#             'job':job,
+#             'password':password
+#         }
+#         allperson.append(person)
+#         print("You added person successfully")
 
 
 
+#     elif choice =="2":
+#         # conter=1
+#         # print("__"*20)
+#         # print("all person : ")
+#         # for i in allperson:
+#         #     print("person",conter)
+#         #     for key in i :
+#         #         print("  ",key ,' : ',i[key])
+#         #     conter+=1
+
+#         print("__"*30)
+#         print("Please enter your name and password : ")
+#         name=input("Enter the user name : ")
+#         password=input("Enter the user password : ")
+#         ## if to check if the name and password is correct > are in the allperson list and dic(person)
+#         for i in allperson:
+#             if i['name']==name and i['password']==password:
+#                 print("Welcom ",name)
+#                 break
+#             else:
+#                 print("the name or password is wrong")
 
 
-    elif choice =="3":
-        print("Thank you for using our app.")
-        break
-    elif choice =="4":
-        print(allperson)
-    else:
-        print("wrong choice ")
+
+
+
+#     elif choice =="3":
+#         print("Thank you for using our app.")
+#         break
+#     elif choice =="4":
+#         print(allperson)
+#     else:
+#         print("wrong choice ")
+
+
+
+
+
+
+
+#******************************************************************************************************
+
+
+#privat and public
+
+class Student:
+    def __init__(self,name,age,id,phone,address,email,password,twajehi_mark,major):
+        self.name=name
+        self.age=age
+        self.__id=id # privat att
+        self.__phone=phone # privat att
+        self.address=address
+        self.__password=password # privat att
+        self.email=email
+        self.__=twajehi_mark # privat att
+        self.major=self.getMajor(self.__twajehi_mark)
+        
+    # def getId(self):
+    #     return self.__id
+    def getPhone(self):
+        return self.__phone
+    def setPhone(self,newphone):
+        self.__phone=newphone
+    def getMajor (self,mark):
+        if mark >= 70:
+            return 'lawyer'
+        elif mark >= 80:
+            return 'eng'
+        elif mark >=90:
+            'doctor'
+
+            
+
+student1=Student('lena',19,123,12346789,'address','email','password',90)
+# print(student1._password)
+student1.setPhone(8965)
+print(student1.major)
+
+
