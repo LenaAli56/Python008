@@ -1,0 +1,25 @@
+أهم مصطلحات في الاوبجكت :
+1-Encapsulation
+2-Data Abstraction
+3-Inheritance
+4-Polymorphism
+
+Object Attributes يتم تخزين فيه البيانات لا يتم فيه شي عاملي   
+Object Method : عبارة عن سلوك انا بتعامل معهبطريقة معينة وبرحع لي نتائج معينه وفي النهاية وهو عبارة عن function
+
+
+class has a Attributes and Method
+what is difference between attributes and Method
+Attributes  :  are variables.
+Method  :  are function.
+
+
+self:يمثل المكان اللي نحفظ فيه الاوبجكت
+__init__ :عبارة عن constructor
+
+
+
+exampile:car , bankaacont
+
+car   attributes:name   brand   model   year ...
+  method     oop part2  28
